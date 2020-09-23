@@ -1,12 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
 
 ul,
@@ -16,12 +30,15 @@ li {
     padding: 0;
 }
 
-.suptitle-left {
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.headline-left {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
-    text-transform: uppercase;
-    color: #FFFFFF;
     opacity: 0.5;
     padding-left: 104px;
     display: inline-block;
@@ -35,5 +52,51 @@ li {
         background-color: #fff;
         left: 0;
         top: 50%;
+    }
+}
+
+.title {
+
+    span {
+        font-weight: 800;
+        font-size: 200px;
+        color: rgba(#fff, .02);
+        position: relative;
+        transform: translateX(-50px);
+        display: inline-block;
+    }
+
+    h3 {
+        margin: 0;
+        color: #fff;
+        font-size: 80px;
+        position: absolute;
+        top: 0;
+        right: -5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
+    }
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+
+    &-head {
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+
+        span {
+            font-weight: 100;
+        }
     }
 }

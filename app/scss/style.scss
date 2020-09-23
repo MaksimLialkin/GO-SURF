@@ -24,8 +24,6 @@
     right: 80px;
     bottom: 116px;
     text-align: right;
-    color: #fff;
-    text-transform: uppercase;
 }
 
 .slider-item__info-suptitle {
@@ -68,7 +66,6 @@
     bottom: 40px;
     max-width: 920px;
     width: 100%;
-    color: #fff;
 
     .slick-current {
         .dots-box {
@@ -95,6 +92,7 @@
     &__name {
         font-weight: 300;
         line-height: 19px;
+        text-transform: capitalize;
     }
 }
 
@@ -113,7 +111,6 @@
     font-weight: 800;
     font-size: 200px;
     line-height: 156px;
-    text-transform: uppercase;
     color: #FFFFFF;
     opacity: 0.07;
     max-width: 467px;
@@ -126,18 +123,15 @@
 .menu {
     padding-top: 30px;
 
-    a {
-        color: #fff;
-
-        span {
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 3px;
-            display: block;
-            padding-top: 6px;
-            margin-bottom: 15px;
-        }
+    span {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 3px;
+        display: block;
+        padding-top: 6px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
     }
 }
 
@@ -150,7 +144,6 @@
     font-weight: 800;
     font-size: 72px;
     line-height: 64px;
-    text-transform: uppercase;
 
     span {
         line-height: 19px;
@@ -171,6 +164,7 @@
     letter-spacing: 1.05px;
     position: relative;
     padding-left: 19px;
+    text-transform: capitalize;
 
     &::before {
         content: "";
@@ -209,5 +203,25 @@
     }
 }
 
+.surf {
+    padding: 160px 0 210px;
+    background-image: url(../img/surf-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 190px;
+    background-size: auto;
+}
+
+.surf__subtitle {
+    text-align: right;
+    padding-right: 80px;
+    margin-top: -86px;
+}
+
+.surf-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+}
 
 @import "media";
