@@ -492,10 +492,14 @@
     }
 }
 
-.travel {
+.holder {
     background-image: url(../img/travel-glass.png);
     background-position: bottom right;
     background-repeat: no-repeat;
+
+    &.sleep {
+        background-image: url(../img/frangipani.png);
+    }
 
     .slider-arrows {
         top: 225px;
@@ -503,7 +507,7 @@
     }
 }
 
-.travel-slider {
+.holder-slider {
     &__head {
         min-height: 780px;
         background-repeat: no-repeat;
@@ -516,15 +520,32 @@
         min-height: 320px;
         background-repeat: no-repeat;
         background-position: right center;
+        background-size: contain;
 
         .descr-head {
             position: relative;
             padding-right: 80px;
 
+            &__sleep {
+                padding-right: 220px;
+            }
+
             img {
                 position: absolute;
                 top: 0;
                 right: 0;
+            }
+
+            .holder__star-list {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+
+
+                img {
+                    position: static;
+                }
             }
         }
     }
@@ -539,7 +560,7 @@
     }
 }
 
-.travel-slider__info {
+.holder-slider__info {
     display: flex;
     justify-content: space-around;
 
@@ -571,7 +592,7 @@
         padding-left: 40px;
         position: relative;
 
-        span {
+        .holder-pricing {
             font-size: 14px;
             font-weight: 400;
             line-height: 36px;
